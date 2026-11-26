@@ -2,41 +2,55 @@
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Panda Login Form</title>
 
-    <!-- Google Font -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
         rel="stylesheet"
-    />
+    >
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <div class="container">
 
-        <form>
+        <form id="loginForm">
 
             <label for="username">Username:</label>
             <input
                 type="text"
                 id="username"
                 placeholder="Username here..."
-            />
+            >
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                placeholder="Email here..."
+                required
+            >
 
             <label for="password">Password:</label>
             <input
                 type="password"
                 id="password"
                 placeholder="Password here..."
-            />
+                required
+            >
 
-            <button id="loginBtn">Login</button>
+            <button type="button" id="registerBtn">
+                Create Account
+            </button>
+
+            <button type="submit" id="loginBtn">
+                Login
+            </button>
 
         </form>
 
@@ -69,7 +83,7 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script type="module" src="script.js"></script>
 
 </body>
 </html>
