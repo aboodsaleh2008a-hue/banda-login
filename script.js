@@ -93,3 +93,14 @@ document.addEventListener("click", (e) => {
     }
 
 });
+const loginBtn = document.getElementById("loginBtn");
+
+loginBtn.addEventListener("click", () => {
+    window.location.href = "whatsapphttps //web.whatsapp.com/";
+});
+function openGame() {
+    window.open(
+        "https://apps.apple.com/ye/app/ea-sports-fc-football-mobile/id1094930513?l=ar",
+        "_blank"
+    );
+}
